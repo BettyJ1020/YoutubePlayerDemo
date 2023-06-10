@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/youtubeListFragment">
+
+    <fragment
+        android:id="@+id/youtubeListFragment"
+        android:name="tw.edu.ncku.iim.yhjiang.ituneplayer.YoutubeListFragment"
+        android:label="YoutubeListFragment" >
+        <action
+            android:id="@+id/action_youtubeListFragment_to_youtubePreviewFragment"
+            app:destination="@id/youtubePreviewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/youtubePreviewFragment"
+        android:name="tw.edu.ncku.iim.yhjiang.ituneplayer.YoutubePreviewFragment"
+        android:label="YoutubePreviewFragment" />
+</navigation>
